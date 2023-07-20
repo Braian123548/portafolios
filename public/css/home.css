@@ -95,7 +95,7 @@
 .home-main-contenedor-imagen figure {
     margin: 10px;
     padding: 0;
-    flex-basis: 430px;
+    flex-basis: 250px;
 }
 
 .home-main-contenedor-imagen img {
@@ -219,6 +219,13 @@ span {
 }
 
 @media (width>1024px) {
+
+    .home-main-contenedor-imagen figure {
+        margin: 10px;
+        padding: 0;
+        flex-basis: 320px;
+    }
+
 
     .home-header {
         display: flex;
