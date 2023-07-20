@@ -1,0 +1,279 @@
+.home-header {
+    background-color: var(--colorAzul);
+    padding: 2rem;
+}
+
+.home-header a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+.home-header button {
+    background-color: var(--colorVerde);
+    padding: 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+.home-header-nav {
+    display: none;
+
+}
+
+
+.home-main-portafolios {
+    background-color: var(--colorVerde);
+    text-align: center;
+    /* Agrega esta línea para centrar el contenido horizontalmente */
+    padding: 1rem;
+    color: white;
+}
+
+
+.home-main-portafolios h1 {
+    text-transform: uppercase;
+
+}
+
+.home-main-portafolios figure {
+    padding: 1rem;
+    margin: 0rem;
+}
+
+.home-main-portafolios-estrella-blanca {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    /* Agrega un margen automático a los lados para centrar horizontalmente */
+    max-width: 300px;
+}
+
+.home-main-portafolios-estrella-blanca hr {
+    border: 4px solid white;
+    width: 100px;
+}
+
+.home-main-portafolios-estrella-azul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    /* Agrega un margen automático a los lados para centrar horizontalmente */
+    max-width: 300px;
+    /* Ajusta el ancho máximo según tus necesidades */
+}
+
+
+.home-main-portafolios-estrella-azul hr {
+    border: 4px solid var(--colorAzul);
+    width: 100px;
+}
+
+.home-main-portafolios-estrella-azul h4 {
+    margin: 0 1rem;
+}
+
+.home-main-portafolios-estrella-blanca h4 {
+    margin: 0 1rem;
+}
+
+
+
+/**/
+
+.home-main-contenedor-imagen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home-main-contenedor-imagen figure {
+    margin: 10px;
+    padding: 0;
+    flex-basis: 430px;
+}
+
+.home-main-contenedor-imagen img {
+    width: 100%;
+    height: auto;
+}
+
+.home-main-contenedor-portafolios h2 {
+    text-align: center;
+}
+
+
+/**/
+
+.home-main-contenedor-portafolios1 {
+    padding: 4rem;
+    background-color: var(--colorVerde);
+}
+
+.home-main-contenedor-portafolios1 {
+    color: white;
+    text-align: center;
+}
+
+
+.home-main-contenedor-portafolios1 h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.home-main-contenedor-portafolios1 a {
+    text-decoration: none;
+    color: white;
+    border: solid 1px white;
+    padding: 0.5rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.texto-about {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+}
+
+.formularios {
+    padding: 0 10%;
+}
+
+.formularios div {
+    display: flex;
+    flex-direction: column;
+}
+
+.formularios div label {
+    margin-top: 1rem;
+}
+
+.formularios div input[type="text"],
+[type="email"],
+[type="tel"],
+textarea {
+    padding: 1rem 0rem;
+    border: none;
+    border-bottom: solid 1px lightgray;
+}
+
+.formularios div input[type="text"]:focus,
+[type="email"]:focus,
+[type="tel"]:focus,
+textarea:focus {
+    outline: none;
+}
+
+.formularios button {
+    margin-top: 2rem;
+    background-color: var(--colorVerde);
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+
+.home-footer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+
+.home-footer h3 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.home-footer-arriba {
+
+    background-color: var(--colorAzul);
+    padding: 2rem;
+    color: white;
+}
+
+.copy {
+    background-color: #0e1924;
+    margin: 0rem;
+    padding: 1rem;
+    color: white;
+}
+
+span {
+    color: var(--colorVerde);
+}
+
+.home-footer-iconos i {
+    border: solid 1px white;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+@media (width>1024px) {
+
+    .home-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .home-header-nav {
+        display: block;
+    }
+
+    .home-header .boton-menu {
+        display: none;
+    }
+
+    .home-header-nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .home-header-nav ul li a {
+        text-decoration: none;
+        margin-right: 2rem;
+    }
+
+    .texto-about {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .home-footer-arriba {
+        display: flex;
+        flex-basis: 1;
+    }
+
+    .home-footer-arriba article {
+        flex: 1;
+    }
+}
+
+
+@media (width>600px) {
+
+
+    .home-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .home-footer-arriba {
+        display: flex;
+        flex-basis: 1;
+    }
+
+    .home-footer-arriba article {
+        flex: 1;
+    }
+
+}
